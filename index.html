@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+    <title>Product Preview Card Component | Frontend Mentor</title>
+</head>
+
+<body class="bg-cream relative">
+
+    <div class="flex justify-center items-center md:h-screen ">
+
+        <!--Content Box-->
+
+        <div class="w-96 grid grid-rows  my-16 lg:grid-cols-2 mx-3 lg:w-[600px]">
+
+        <!--Image Part-->
+
+            <div>
+                <img src="images/image-product-desktop.jpg" alt=""
+                    class="hidden  rounded-tl-xl rounded-bl-xl lg:block ">
+                <img src="images/image-product-mobile.jpg" alt="" class="block lg:hidden rounded-t-xl">
+            </div>
+
+        <!--Description Part-->
+
+            <div
+                class="flex flex-col bg-white rounded-b-xl py-5 space-y-5 lg:py-10 px-7 lg:space-y-8 lg:rounded-bl-none lg:rounded-tr-xl lg:rounded-br-xl   ">
+                <p class="text-grayishBlue tracking-[0.2rem] uppercase text-xs font-bold">Perfume</p>
+                <h1 class="text-2xl font-Fraunces font-bold  text-darkBlue ">Gabrielle Essence Eau De Parfum
+                </h1>
+                <p class="text-grayishBlue text-sm font-semibold">A floral, solar and voluptuous interpretation composed
+                    by Olivier
+                    Polge, Perfumer-Creator for the
+                    House of Chanel. </p>
+                <div class="flex items-center space-x-4 ">
+                    <p class="text-darkCyan font-Fraunces text-2xl font-bold">$149.99</p>
+                    <p class="text-grayishBlue text-xs line-through">$169.99</p>
+                </div>
+                <div class="relative">
+                    <button
+                        class="bg-darkCyan text-white text-xs  py-3 px-20 font-bold rounded-md hover:bg-darkerCyan transition duration-200  ">
+                        Add to Cart
+                    </button>
+                    <ion-icon name="cart-outline" class="absolute left-[50px] top-3 text-white font-bold "></ion-icon>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="absolute bottom-0 md:-bottom-4 lg:bottom-2 ">
+            <p class="text-darkBlue text-center text-sm md:text-base">Challenge From <span class="text-darkCyan">Frontend Mentor</span> | Created By <span class="text-darkCyan">Hina Hotak</span></p>
+        </div>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
